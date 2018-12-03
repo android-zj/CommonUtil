@@ -7,7 +7,6 @@ import java.util.regex.Pattern;
 
 /**
  * 电话验证工具类
- * Created by Administrator on 2017/3/3.
  */
 
 public class PhoneUtils {
