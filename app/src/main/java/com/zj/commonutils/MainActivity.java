@@ -6,7 +6,15 @@ import android.os.Bundle;
 import com.zj.library.BadgeUtils;
 import com.zj.library.BankInfoUtils;
 import com.zj.library.CopyUtils;
+import com.zj.library.DataUtils;
+import com.zj.library.DisplayUtils;
+import com.zj.library.HideUtils;
+import com.zj.library.IdCardUtils;
+import com.zj.library.KeepUtils;
 import com.zj.library.PhoneUtils;
+import com.zj.library.RandomUtils;
+import com.zj.library.ScreenUtils;
+import com.zj.library.ToastUtils;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -51,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
         DataUtils.getDateToString(Long.parseLong("1537524997000"),minute);//时间戳转时间
         String mDate = "yyyy-MM-dd";     //年月日格式
         String mTime =  "HH:mm"; //时分格式
-        DataUtils.getDateAndWeek(mDate,"1537524997000",mTime);//时间戳转  如2018-06-8 (星期五) 16:40格式
-        DataUtils.secondToTime("1537524997000");//时间戳转时间 如打车根据距离计算出时间有  day-hour-minute/hour-minute/minute
+        DataUtils.getDateAndWeek(mDate,Long.parseLong("1537524997000"),mTime);//时间戳转  如2018-06-8 (星期五) 16:40格式
+        DataUtils.secondToTime(Long.parseLong("1537524997000"));//时间戳转时间 如打车根据距离计算出时间有  day-hour-minute/hour-minute/minute
 
         //隐藏
         HideUtils.phoneHide("18366668888");  //手机号中间四位隐藏
