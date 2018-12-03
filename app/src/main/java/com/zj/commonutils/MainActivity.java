@@ -6,7 +6,6 @@ import android.os.Bundle;
 import com.zj.library.BadgeUtils;
 import com.zj.library.BankInfoUtils;
 import com.zj.library.CopyUtils;
-import com.zj.library.DisplayUtils;
 import com.zj.library.PhoneUtils;
 
 public class MainActivity extends AppCompatActivity {
